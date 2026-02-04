@@ -13,6 +13,10 @@ public class ArrayEntity {
         return array.clone();
     }
 
+    public int getLength() {
+        return array.length;
+    }
+
     @Override
     public boolean equals(Object obj) {
         if (obj == null) {
