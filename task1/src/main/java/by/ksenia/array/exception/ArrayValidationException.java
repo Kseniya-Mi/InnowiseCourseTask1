@@ -2,19 +2,19 @@ package by.ksenia.array.exception;
 
 public class ArrayValidationException extends Exception{
 
-    ArrayValidationException(){
+   public ArrayValidationException(){
         super();
     }
 
-    ArrayValidationException(String message){
+   public ArrayValidationException(String message){
         super(message);
     }
 
-    ArrayValidationException(String message, Throwable cause){
+   public ArrayValidationException(String message, Throwable cause){
         super(message, cause);
     }
 
-    ArrayValidationException(Throwable cause){
+   public ArrayValidationException(Throwable cause){
         super(cause);
     }
 }
