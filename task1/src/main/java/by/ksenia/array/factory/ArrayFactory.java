@@ -5,5 +5,5 @@ import by.ksenia.array.exception.ArrayValidationException;
 
 public interface ArrayFactory {
 
-    ArrayEntity createArray(int[] data) throws ArrayValidationException;
+    ArrayEntity createArray(Long id, int[] data) throws ArrayValidationException;
 }

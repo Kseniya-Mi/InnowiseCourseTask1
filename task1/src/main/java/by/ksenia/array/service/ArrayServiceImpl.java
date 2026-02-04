@@ -45,7 +45,7 @@ public class ArrayServiceImpl implements ArrayService {
     }
 
     @Override
-    public ArrayEntity sortWithBubbleSort(ArrayEntity array) {
+    public void sortWithBubbleSort(ArrayEntity array) {
         int[] arr = array.getArray();
         int n = arr.length;
         boolean swapped;
@@ -63,11 +63,10 @@ public class ArrayServiceImpl implements ArrayService {
             if (!swapped) break;
         }
         logger.info("Array sorted with Bubble Sort");
-        return new ArrayEntity(arr);
     }
 
     @Override
-    public ArrayEntity sortWithSelectionSort(ArrayEntity array) {
+    public void sortWithSelectionSort(ArrayEntity array) {
         int[] arr = array.getArray();
         int n = arr.length;
 
@@ -83,5 +82,5 @@ public class ArrayServiceImpl implements ArrayService {
             arr[i] = temp;
         }
         logger.info("Array sorted with Selection Sort");
-        return new ArrayEntity(arr);    }
+    }
 }

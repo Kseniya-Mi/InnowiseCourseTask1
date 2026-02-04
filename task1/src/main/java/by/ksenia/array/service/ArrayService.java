@@ -6,6 +6,6 @@ public interface ArrayService {
     int findMin(ArrayEntity array);
     int findMax(ArrayEntity array);
     int calculateSum(ArrayEntity array);
-    ArrayEntity sortWithBubbleSort(ArrayEntity array);
-    ArrayEntity sortWithSelectionSort(ArrayEntity array);
+    void sortWithBubbleSort(ArrayEntity array);
+    void sortWithSelectionSort(ArrayEntity array);
 }

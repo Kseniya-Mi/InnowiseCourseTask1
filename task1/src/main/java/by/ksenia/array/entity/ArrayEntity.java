@@ -4,9 +4,15 @@ import java.util.Arrays;
 
 public class ArrayEntity {
     private final int[] array;
+    private Long id;
 
-    public ArrayEntity(int[] array) {
+    public ArrayEntity(Long id, int[] array) {
         this.array = array.clone();
+        this.id = id;
+    }
+
+    public Long getId() {
+        return id;
     }
 
     public int[] getArray() {
@@ -45,4 +51,5 @@ public class ArrayEntity {
     public String toString() {
         return Arrays.toString(array);
     }
+
 }
